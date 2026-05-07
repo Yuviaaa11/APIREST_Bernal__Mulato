@@ -4,14 +4,14 @@ dotenv.config();
 
 export const sqlServerConfig = {
     user: 'sa',
-    password: 'maxon123',
-    server: 'YUVIA',
+    password: 'Demacia05',
+    server: 'localhost', // SIEMPRE debe ser localhost o 127.0.0.1
     database: 'Users',
     options: {
         encrypt: false,
         trustServerCertificate: true,
-        instanceName: 'ABIGAIL'
-    },
+        instanceName: 'SQLEXPRESS' // Aquí es donde se especifica la instancia
+    }
 };
 
 export const getConnection = async () => {
